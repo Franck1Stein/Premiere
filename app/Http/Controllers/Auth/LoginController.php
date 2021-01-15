@@ -27,15 +27,17 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected function authenticated(Request $request, $user) {
 
-      if ($user->hasRole('superadministrator')) {
-        return redirect('/admin');
-      }
-      if ($user->hasRole('user')){
-        return redirect('/user');
-      }
-    }
+    protected $redirectTo = 'admin/index';
+//    protected function authenticated(Request $request, $user) {
+//
+//      if ($user->hasRole('admin')) {
+//        return redirect('/admin');
+//      }
+//      if ($user->hasRole('user')){
+//        return redirect('/user');
+//      }
+//    }
 
     /**
      * Create a new controller instance.

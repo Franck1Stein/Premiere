@@ -31,6 +31,8 @@ let router = new VueRouter({
 
 Vue.component('profile', require('./components/Profile.vue').default);
 Vue.component('dashboard', require('./components/Dashboard.vue').default);
+Vue.component('users', require('./components/Users.vue').default);
+Vue.component('xcompo', require('./components/Xcompo.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
