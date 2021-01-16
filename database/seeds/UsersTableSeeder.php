@@ -37,7 +37,9 @@ class UsersTableSeeder extends Seeder
 
             'email' => 'admin@test.com',
 
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+
+            'role' => 'Administrator'
         ]);
 
 
@@ -46,7 +48,9 @@ class UsersTableSeeder extends Seeder
 
             'email' => 'publisher@test.com',
 
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+
+            'role' => 'Publisher'
         ]);
 
         $user = User::create([
@@ -54,7 +58,9 @@ class UsersTableSeeder extends Seeder
 
             'email' => 'user@test.com',
 
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+
+            'role' => 'user'
         ]);
 
 
