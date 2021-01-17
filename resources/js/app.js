@@ -55,9 +55,25 @@ window.Fire = Fire;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('profile', require('./components/Profile.vue').default);
+Vue.component('developer', require('./components/Developer.vue').default);
 Vue.component('dashboard', require('./components/Dashboard.vue').default);
 Vue.component('users', require('./components/Users.vue').default);
-Vue.component('xcompo', require('./components/Xcompo.vue').default);
+
+
+Vue.component(
+    'passport-clients',
+    require('./components/passport/Clients.vue').default
+);
+
+Vue.component(
+    'passport-authorized-clients',
+    require('./components/passport/AuthorizedClients.vue').default
+);
+
+Vue.component(
+    'passport-personal-access-tokens',
+    require('./components/passport/PersonalAccessTokens.vue').default
+);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

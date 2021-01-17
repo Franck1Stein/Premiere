@@ -34,18 +34,16 @@
                     </router-link>
                 </li>
 
-                <li class="nav-item">
-                    <router-link :to="{ name: 'Xcompo' }" class="nav-link" exact>
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Inactive Page</p>
-                    </router-link>
-                </li>
-
             </ul>
 
         </li>
 
         <li class="nav-item">
+
+            <router-link :to="{ name: 'Developer' }" tag="a" class="nav-link" active-class="active" exact>
+                <i class="nav-icon fas fa-cogs profile orange"></i>
+                <p>Developer</p>
+            </router-link>
 
             <router-link :to="{ name: 'Profile' }" tag="a" class="nav-link" active-class="active" exact>
                 <i class="nav-icon fas fa-user profile orange"></i>
